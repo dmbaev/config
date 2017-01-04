@@ -42,7 +42,6 @@ server {
         add_header X-Content-Type-Options nosniff;
         add_header X-XSS-Protection "1; mode=block";
         ssl_ciphers 'ECDH+AESGCM256:DH+AESGCM256:ECDH+AES256:SH+AES256:RSA+AESGCM256:RSA+AES256:!aNULL:!MD5:!kEDH';
-        #ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES2$
         ssl_prefer_server_ciphers on;
         ssl_stapling on;
         ssl_stapling_verify on;
