@@ -30,6 +30,7 @@ server {
         proxy_cache_bypass $http_upgrade;
             }
             
+        # cat your_domain.crt COMODORSADomainValidationSecureServerCA.crt COMODORSAAddTrustCA.crt AddTrustExternalCARoot.crt >> your.crt   
         ssl_certificate /etc/nginx/ssl/your.crt;
         ssl_certificate_key /etc/nginx/your.key;
         ssl_dhparam /etc/nginx/ssl/your.pem;
